@@ -1,0 +1,51 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "cmd+k cmd+left",
+    "command": "-workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "ctrl+a l",
+    "command": "workbench.action.focusRightGroup"
+  },
+  {
+    "key": "cmd+k cmd+right",
+    "command": "-workbench.action.focusRightGroup"
+  },
+  {
+    "key": "cmd+k cmd+down",
+    "command": "-workbench.action.focusBelowGroup"
+  },
+  {
+    "key": "ctrl+a s",
+    "command": "workbench.action.splitEditorToBelowGroup"
+  },
+  {
+    "key": "ctrl+a v",
+    "command": "workbench.action.splitEditorRight"
+  },
+  {
+    "key": "ctrl+a j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "cmd+k right",
+    "command": "-workbench.action.moveActiveEditorGroupRight"
+  },
+  {
+    "key": "ctrl+a k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl+a h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+a l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "ctrl+a z",
+    "command": "workbench.action.toggleMaximizedPanel"
+  }
+]
