@@ -46,7 +46,7 @@ function ssh_connection() {
   fi
 }
 
-PROMPT=$'\n$(ssh_connection)%{$fg_bold[green]%}%m%{$reset_color%} %~$(my_git_prompt)\n→ '
+PROMPT=$'\n$(ssh_connection)%{$fg[blue]%}%~$(my_git_prompt)\n%{$fg_bold[green]%}→%{$reset_color%} '
 
 ZSH_THEME_PROMPT_RETURNCODE_PREFIX="%{$fg_bold[red]%}"
 ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg_bold[yellow]%}"
