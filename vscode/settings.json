@@ -1,11 +1,12 @@
 {
-    "vim.smartRelativeLine": true,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
-    "vim.useSystemClipboard": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "editor.inlineSuggest.enabled": true,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
+  "vim.smartRelativeLine": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "vim.useSystemClipboard": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.inlineSuggest.enabled": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }
