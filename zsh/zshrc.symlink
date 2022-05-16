@@ -1,6 +1,9 @@
 # Add fastlane to PATH
 export PATH="$HOME/.local/bin:$HOME/.fastlane/bin:$HOME/.dotfiles/linux/bin:$HOME/.pyenv/bin:$PATH"
 
+# Add Android SDK platform tools to PATH
+export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools/"
+
 # Disable auto title for tmuxinator
 export DISABLE_AUTO_TITLE='true'
 
