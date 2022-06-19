@@ -11,8 +11,8 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "scm.autoReveal": false,
   "svelte.enable-ts-plugin": true,
-  "eslint.validate": [
-    "javascript",
-    "svelte"
-  ]
+  "eslint.validate": ["javascript", "svelte"],
+  "window.autoDetectColorScheme": true,
+  "workbench.colorTheme": "Default Light+",
+  "editor.minimap.enabled": false
 }
