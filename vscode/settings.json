@@ -12,7 +12,15 @@
   "scm.autoReveal": false,
   "svelte.enable-ts-plugin": true,
   "eslint.validate": ["javascript", "svelte"],
+  "editor.minimap.enabled": false,
+  "aws.profile": "profile:wslfx-playground",
+  "workbench.colorTheme": "Monokai",
+  "workbench.preferredLightColorTheme": "Visual Studio Light",
+  "workbench.preferredDarkColorTheme": "Monokai",
+  "workbench.preferredHighContrastColorTheme": "Default High Contrast Light",
   "window.autoDetectColorScheme": true,
-  "workbench.colorTheme": "Default Light+",
-  "editor.minimap.enabled": false
+  "emmet.showAbbreviationSuggestions": false,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.optimizeStylesheetParsing": false,
+  "emmet.showExpandedAbbreviation": "never"
 }
