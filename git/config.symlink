@@ -1,6 +1,3 @@
-# Sample gitconfig
-#
-
 [user]
 	name = yn5
 	email = ynsnetmail@gmail.com
@@ -32,7 +29,7 @@
         branch = auto
         ui = true
 [core]
-	excludesfile = /Users/yn5/.gitignore
+	excludesfile = ~/.config/git/ignore
         editor = nvim
         pager = diff-so-fancy | less --tabs=4 -RFX
 [mergetool]
