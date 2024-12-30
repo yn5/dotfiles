@@ -53,9 +53,18 @@ For MacOS.
    ln -s ~/.dotfiles/zsh/zshrc.symlink ~/.zshrc
    ```
 
-4. Install plugins in neovim
+4. Install plugins in `vim-plug`
 
-   Open `neovim` and run `:PlugInstall`. (Needs to have `node` and `npm` installed on the machine for `coc.nvim` installation.)
+   ```bash
+   sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+   ```
+
+5. Install plugins in `neovim`
+   ```bash
+   nvim --headless +PlugInstall +qall
+   ```
+   (Needs to have `node` and `npm` installed on the machine for `coc.nvim` installation.)
 
 ### Neovim setup
 
