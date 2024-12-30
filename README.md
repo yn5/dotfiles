@@ -8,6 +8,12 @@ For MacOS.
 2. Install all dependencies
 3. Symlink all files ending on `.symlink`
 
+   ### Ghostty
+
+   ```bash
+   ln -s ~/.dotfiles/ghostty/config.symlink ~/.config/ghostty/config
+   ```
+
    ### Git
 
    ```bash
@@ -57,6 +63,7 @@ For MacOS.
 
 - [Homebrew](https://brew.sh/)
 - [node (with `nvm`)](https://github.com/nvm-sh/nvm)
+- [Ghostty](https://ghostty.org/)
 - [git](https://git-scm.com/)
 - [neovim](https://neovim.io/)
 - [tmux](https://github.com/tmux/tmux)
