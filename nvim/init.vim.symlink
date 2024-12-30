@@ -1,3 +1,32 @@
+" Enable Vim plugin compatibility by including traditional Vim directories
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
+
+" Ensure plugins work consistently across both Vim and Neovim
 let &packpath = &runtimepath
-source ~/.vimrc
+
+scriptencoding utf-8
+set encoding=utf-8
+
+set nocompatible " Be iMproved, required
+
+source $HOME/.dotfiles/nvim/keys.vim
+source $HOME/.dotfiles/nvim/plugins.vim
+source $HOME/.dotfiles/nvim/settings.vim
+source $HOME/.dotfiles/nvim/colors.vim
+
+if has("gui_running")
+  set columns=90
+  set lines=56
+
+  " GUI options:
+  " a: Auto copy selection to clipboard
+  " g: Grey menu items when unavailable
+  " i: Vim icon in GUI window
+  " t: Include tearoff menu items
+  " c: Console dialogs for simple choices
+  " M: Don't source menu.vim on startup
+  set guioptions=agitcM
+else
+  set fillchars+=vert:\
+endif
+

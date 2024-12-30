@@ -33,7 +33,7 @@
         ui = true
 [core]
 	excludesfile = /Users/yn5/.gitignore
-        editor = vim
+        editor = nvim
         pager = diff-so-fancy | less --tabs=4 -RFX
 [mergetool]
         keepBackup = false

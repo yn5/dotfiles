@@ -68,8 +68,6 @@ Plug 'othree/yajs.vim'
 
 Plug 'mxw/vim-jsx'
 
-" Plug 'HerringtonDarkholme/yats.vim'
-
 Plug 'peitalin/vim-jsx-typescript'
 
 Plug 'posva/vim-vue'
@@ -78,7 +76,7 @@ Plug 'mustache/vim-mustache-handlebars'
 
 Plug 'dr-chip-vim-scripts/ZoomWin'
 
-Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
 
 Plug 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_map = '<c-p>'
