@@ -52,17 +52,11 @@ bind-key -Tcopy-mode-vi 'y' send -X copy-pipe-and-cancel "reattach-to-user-names
 unbind -Tcopy-mode-vi Enter
 bind-key -Tcopy-mode-vi Enter send -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
 
-
 # Status Bar
 set -g status-justify centre
-set-option -g status-style bg=colour234,fg=colour255
 set-option -g status-interval 1
 set-option -g status-left ''
 set-option -g status-right ''
-
-# Pane borders
-set-option -g pane-active-border-style fg=colour241
-set-option -g pane-border-style fg=colour238
 
 # Set window notifications
 setw -g monitor-activity on
@@ -83,6 +77,22 @@ set -g mouse on
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'tmux-plugins/tmux-yank'
+set -g @plugin 'erikw/tmux-dark-notify'
 
-# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
-run '~/.tmux/plugins/tpm/tpm'
+# Switch theme based on system dark mode
+set -g @dark-notify-theme-path-light '$HOME/.dotfiles/tmux/tmux-colors-light.conf'
+set -g @dark-notify-theme-path-dark '$HOME/.dotfiles/tmux/tmux-colors-dark.conf'
+
+# Install TMUX Plugin Manager if not already installed
+if "test ! -d ~/.tmux/plugins/tpm" \
+   "run 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm && ~/.tmux/plugins/tpm/bin/install_plugins'"
+
+# Install TPM plugins
+run '~/.tmux/plugins/tpm/bin/install_plugins'
+
+# Initialize TMUX plugin manager (keep this line at the bottom of tmux.conf)
+run-shell '~/.tmux/plugins/tpm/tpm'
+
+# To cover some corner cases e.g. if you use the plugin tmux-reset or another TPM plugin sets the theme itself
+if-shell "test -e ~/.local/state/tmux/tmux-dark-notify-theme.conf" \
+     "source-file ~/.local/state/tmux/tmux-dark-notify-theme.conf"
