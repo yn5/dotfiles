@@ -56,7 +56,6 @@ create_directories() {
     
     mkdir -p ~/.config/ghostty
     mkdir -p ~/.config/git
-    mkdir -p ~/.config/nvim
     mkdir -p ~/.config/tmux
     mkdir -p "$HOME/Library/Application Support/Code/User"
 }
@@ -73,7 +72,7 @@ create_symlinks() {
     ln -sf ~/.dotfiles/git/ignore.symlink ~/.config/git/ignore
     
     # Neovim
-    ln -sf ~/.dotfiles/nvim/init.vim.symlink ~/.config/nvim/init.vim
+    ln -sf ~/.dotfiles/nvim.symlink ~/.config/nvim
     
     # Tmux
     ln -sf ~/.dotfiles/tmux/tmux.conf.symlink ~/.config/tmux/tmux.conf
@@ -84,20 +83,6 @@ create_symlinks() {
     
     # Zsh
     ln -sf ~/.dotfiles/zsh/zshrc.symlink ~/.zshrc
-}
-
-# Setup Neovim plugins
-setup_neovim() {
-    print_status "Setting up Neovim..."
-    
-    # Install vim-plug if not installed
-    if [ ! -f "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim ]; then
-        sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-    fi
-    
-    # Install plugins
-    nvim --headless +PlugInstall +qall
 }
 
 main() {
@@ -117,7 +102,6 @@ main() {
     install_dependencies
     create_directories
     create_symlinks
-    setup_neovim
     
     print_status "Bootstrap complete! Please restart your terminal."
 }
