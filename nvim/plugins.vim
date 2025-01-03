@@ -105,4 +105,27 @@ let g:ale_set_highlights = 0
 let g:ale_sign_error = 'x'
 let g:ale_sign_warning = '!'
 
+Plug 'cormacrelf/dark-notify'
+
 call plug#end()
+
+" Dark Notify Lua config
+:lua <<EOF
+require('dark_notify').run({
+    schemes = {
+      dark  = "apprentice",
+      light = "genericdc-light"
+    },
+    onchange = function(mode)
+      if mode == "dark" then
+        vim.api.nvim_command('let g:airline_theme = "raven"')
+      else
+        vim.api.nvim_command('let g:airline_theme = "sol"')
+      end
+
+      vim.api.nvim_command('highlight CursorLine term=underline cterm=NONE guibg=NONE gui=NONE')
+      vim.api.nvim_command('highlight LineNr ctermbg=NONE')
+      vim.api.nvim_command('highlight VertSplit ctermbg=NONE')
+    end,
+})
+EOF
