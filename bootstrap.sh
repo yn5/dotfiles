@@ -40,9 +40,6 @@ install_dependencies() {
     # Install Dark Notify (for automatic dark mode in tmux and neovim)
     brew install cormacrelf/tap/dark-notify
 
-    # Install Tmux Plugin Manager
-    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
     # Install Oh My Zsh
     if [ ! -d "$HOME/.oh-my-zsh" ]; then
         sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
