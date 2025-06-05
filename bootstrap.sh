@@ -19,6 +19,9 @@ install_homebrew() {
     if ! command -v brew &> /dev/null; then
         print_status "Installing Homebrew..."
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        echo >> /Users/yn5/.zprofile
+        echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/yn5/.zprofile
+        eval "$(/opt/homebrew/bin/brew shellenv)"
     else
         print_status "Homebrew already installed"
     fi
