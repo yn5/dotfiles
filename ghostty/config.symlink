@@ -1,3 +1,4 @@
 theme = light:dayfox,dark:Smyck
 keybind = global:alt+space=toggle_quick_terminal
 quick-terminal-animation-duration = 0.13
+initial-window = false
