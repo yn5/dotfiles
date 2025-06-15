@@ -42,6 +42,8 @@ install_dependencies() {
     brew install --cask visual-studio-code
     
     # Install Dark Notify (for automatic dark mode in tmux and neovim)
+    # Since there isn't a binary for Silicon chips Rosetta should be installed. See https://github.com/cormacrelf/dark-notify/issues/11.
+    /usr/sbin/softwareupdate --install-rosetta --agree-to-license
     brew install cormacrelf/tap/dark-notify
 
     # Install Oh My Zsh
