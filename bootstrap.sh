@@ -31,6 +31,8 @@ install_homebrew() {
 install_dependencies() {
     print_status "Installing dependencies..."
     
+    brew update
+
     # Install all required applications
     brew install git
     brew install neovim
