@@ -37,6 +37,7 @@ install_dependencies() {
     brew install git
     brew install neovim
     brew install nvm
+    brew install uv
     brew install tmux
     brew install zsh
     brew install diff-so-fancy
