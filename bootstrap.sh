@@ -80,7 +80,7 @@ create_symlinks() {
     ln -sf ~/.dotfiles/git/ignore.symlink ~/.config/git/ignore
     
     # Neovim
-    ln -sf ~/.dotfiles/nvim.symlink ~/.config/nvim
+    ln -sfn ~/.dotfiles/nvim.symlink ~/.config/nvim
     
     # Tmux
     ln -sf ~/.dotfiles/tmux/tmux.conf.symlink ~/.config/tmux/tmux.conf
