@@ -39,5 +39,7 @@
   "go.formatTool": "gofmt",
   "[go]": {
     "editor.defaultFormatter": "golang.go"
-  }
+  },
+  "python.analysis.typeCheckingMode": "standard",
+  "python.analysis.diagnosticSeverityOverrides": {}
 }
