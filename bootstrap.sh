@@ -93,6 +93,14 @@ create_symlinks() {
     ln -sf ~/.dotfiles/zsh/zshrc.symlink ~/.zshrc
 }
 
+# Set configuration paramters
+configure() {
+  # Enable key repeat for VSCode instead of the symbol menu. The command to this
+  # for the whole system (defaults write -g ApplePressAndHoldEnabled -bool false)
+  # doesn't seem to work on MacOS 26.1.
+ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+}
+
 main() {
     # Check if running on MacOS
     if [[ "$OSTYPE" != "darwin"* ]]; then
@@ -110,6 +118,7 @@ main() {
     install_dependencies
     create_directories
     create_symlinks
+    configure
     
     print_status "Bootstrap complete! Please restart your terminal."
 }
