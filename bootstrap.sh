@@ -40,6 +40,7 @@ install_dependencies() {
     brew install uv
     brew install tmux
     brew install zsh
+    brew install tree
     brew install diff-so-fancy
     brew install --cask docker-desktop
     brew install --cask ghostty
