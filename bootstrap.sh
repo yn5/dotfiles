@@ -41,6 +41,7 @@ install_dependencies() {
     brew install tmux
     brew install zsh
     brew install diff-so-fancy
+    brew install --cask docker-desktop
     brew install --cask ghostty
     brew install --cask visual-studio-code
     
