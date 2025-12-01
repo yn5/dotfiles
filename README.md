@@ -10,3 +10,8 @@ For MacOS.
    ```bash
    ~/.dotfiles/bootstrap.sh
    ```
+
+## Troubleshooting
+
+### Tmux colors
+If the theme colors aren't applied after first running the bootstrap script you can try pressing `prefix` + I (capital i, as in Install) to fetch the plugin. Or try running the script in ` ~/.tmux/plugins/tpm/bin/install_plugins`.
