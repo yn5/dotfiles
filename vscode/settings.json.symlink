@@ -42,5 +42,8 @@
   },
   "python.analysis.typeCheckingMode": "strict",
   "python.analysis.diagnosticSeverityOverrides": {},
-  "remote.autoForwardPortsSource": "hybrid"
+  "remote.autoForwardPortsSource": "hybrid",
+  "claudeCode.preferredLocation": "panel",
+  "ruff.configurationPreference": "filesystemFirst",
+  "ruff.format.backend": "uv"
 }
