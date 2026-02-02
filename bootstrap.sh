@@ -62,6 +62,7 @@ install_dependencies() {
 create_directories() {
     print_status "Creating config directories..."
     
+    mkdir -p ~/.claude
     mkdir -p ~/.config/ghostty
     mkdir -p ~/.config/git
     mkdir -p ~/.config/tmux
@@ -72,6 +73,9 @@ create_directories() {
 create_symlinks() {
     print_status "Creating symlinks..."
     
+    # Ghostty
+    ln -sf ~/.dotfiles/claude/settings.json.symlink ~/.claude/settings.json
+
     # Ghostty
     ln -sf ~/.dotfiles/ghostty/config.symlink ~/.config/ghostty/config
     

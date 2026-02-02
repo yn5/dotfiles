@@ -1,0 +1,12 @@
+{
+  "sandbox": {
+    "enabled": true,
+    "filesystem": {
+      "deniedPaths": ["~/.ssh", "~/.aws", "~/.gnupg", "~/.config"]
+    },
+    "network": {
+      "allowedDomains": [],
+      "mode": "restricted"
+    }
+  }
+}
