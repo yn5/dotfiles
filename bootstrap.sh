@@ -95,10 +95,8 @@ create_symlinks() {
 
 # Set configuration paramters
 configure() {
-  # Enable key repeat for VSCode instead of the symbol menu. The command to this
-  # for the whole system (defaults write -g ApplePressAndHoldEnabled -bool false)
-  # doesn't seem to work on MacOS 26.1.
- defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+  # Enable key repeat of the symbol menu. Requires logout and login to take effect.
+  defaults write -g ApplePressAndHoldEnabled -bool false
 }
 
 main() {
