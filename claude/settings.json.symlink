@@ -8,5 +8,11 @@
       "allowedDomains": [],
       "mode": "restricted"
     }
+  },
+  "permissions": {
+    "allow": [
+      "Read(/tmp/**)",
+      "Write(/tmp/**)"
+    ]
   }
 }
