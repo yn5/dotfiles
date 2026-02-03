@@ -73,7 +73,7 @@ create_directories() {
 create_symlinks() {
     print_status "Creating symlinks..."
     
-    # Claude
+    # Ghostty
     ln -sf ~/.dotfiles/claude/settings.json.symlink ~/.claude/settings.json
 
     # Ghostty
@@ -82,9 +82,6 @@ create_symlinks() {
     # Git
     ln -sf ~/.dotfiles/git/config.symlink ~/.config/git/config
     ln -sf ~/.dotfiles/git/ignore.symlink ~/.config/git/ignore
-
-    # Glide
-    ln -sf ~/.dotfiles/glide/glide.toml.symlink ~/.glide.toml
     
     # Neovim
     ln -sfn ~/.dotfiles/nvim.symlink ~/.config/nvim
