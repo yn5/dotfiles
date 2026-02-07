@@ -21,7 +21,8 @@
     ],
     "allow": [
       "Edit(/tmp/**)",
-      "Edit(/private/tmp/**)"
+      "Edit(/private/tmp/**)",
+      "Edit(~/.config/git/config)"
     ]
   }
 }
