@@ -10,7 +10,8 @@
   },
   "env": {
     "TMPDIR": "/tmp/claude",
-    "CLAUDE_CODE_TMPDIR": "/tmp/claude"
+    "CLAUDE_CODE_TMPDIR": "/tmp/claude",
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
   },
   "permissions": {
     "deny": [
