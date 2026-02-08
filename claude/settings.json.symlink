@@ -1,5 +1,23 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "env": {
+    "TMPDIR": "/tmp/claude",
+    "CLAUDE_CODE_TMPDIR": "/tmp/claude",
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Edit(/tmp/**)",
+      "Edit(/private/tmp/**)",
+      "Edit(~/.config/git/config)"
+    ],
+    "deny": [
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)",
+      "Read(~/.gnupg/**)",
+      "Read(~/.config/**)"
+    ]
+  },
   "sandbox": {
     "enabled": true,
     "autoAllowBashIfSandboxed": true,
@@ -8,22 +26,7 @@
       "allowedDomains": []
     }
   },
-  "env": {
-    "TMPDIR": "/tmp/claude",
-    "CLAUDE_CODE_TMPDIR": "/tmp/claude",
-    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
-  },
-  "permissions": {
-    "deny": [
-      "Read(~/.ssh/**)",
-      "Read(~/.aws/**)",
-      "Read(~/.gnupg/**)",
-      "Read(~/.config/**)"
-    ],
-    "allow": [
-      "Edit(/tmp/**)",
-      "Edit(/private/tmp/**)",
-      "Edit(~/.config/git/config)"
-    ]
+  "enabledPlugins": {
+    "everything-claude-code@everything-claude-code": true
   }
 }
