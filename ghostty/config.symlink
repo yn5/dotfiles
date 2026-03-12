@@ -1,4 +1,6 @@
 theme = light:dayfox,dark:Smyck
 keybind = global:alt+space=toggle_quick_terminal
 quick-terminal-animation-duration = 0.13
+quick-terminal-screen = macos-menu-bar
+quick-terminal-size = 100%
 initial-window = false
