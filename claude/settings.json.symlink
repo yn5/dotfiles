@@ -18,15 +18,20 @@
       "Read(~/.config/**)"
     ]
   },
+  "enabledPlugins": {
+    "everything-claude-code@everything-claude-code": true,
+    "slack@claude-plugins-official": true,
+    "swift-lsp@claude-plugins-official": true
+  },
   "sandbox": {
     "enabled": true,
     "autoAllowBashIfSandboxed": true,
-    "allowUnsandboxedCommands": false,
+    "allowUnsandboxedCommands": true,
     "network": {
-      "allowedDomains": []
+      "allowedDomains": [
+        "localhost"
+      ]
     }
   },
-  "enabledPlugins": {
-    "everything-claude-code@everything-claude-code": true
-  }
+  "model": "opus"
 }
