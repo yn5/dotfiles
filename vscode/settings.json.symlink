@@ -45,5 +45,6 @@
   "remote.autoForwardPortsSource": "hybrid",
   "claudeCode.preferredLocation": "panel",
   "ruff.configurationPreference": "filesystemFirst",
-  "ruff.format.backend": "uv"
+  "ruff.format.backend": "uv",
+  "makefile.configureOnOpen": true
 }
