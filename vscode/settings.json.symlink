@@ -28,7 +28,7 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "swiftlang.swift-vscode",
   "prettier.requireConfig": true,
   "git.openRepositoryInParentFolders": "always",
   "go.toolsManagement.autoUpdate": true,
@@ -46,5 +46,8 @@
   "claudeCode.preferredLocation": "panel",
   "ruff.configurationPreference": "filesystemFirst",
   "ruff.format.backend": "uv",
-  "makefile.configureOnOpen": true
+  "makefile.configureOnOpen": true,
+  "[swift]": {
+    "editor.defaultFormatter": "swiftlang.swift-vscode"
+  }
 }
