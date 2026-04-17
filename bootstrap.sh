@@ -95,6 +95,20 @@ create_symlinks() {
     ln -sf ~/.dotfiles/zsh/zshrc.symlink ~/.zshrc
 }
 
+# Install VS Code extensions
+install_vscode_extensions() {
+    print_status "Installing VS Code extensions..."
+
+    if ! command -v code &> /dev/null; then
+        print_error "VS Code CLI not found, skipping extensions"
+        return
+    fi
+
+    while IFS= read -r extension; do
+        code --install-extension "$extension" --force
+    done < ~/.dotfiles/vscode/extensions.txt
+}
+
 # Set configuration paramters
 configure() {
   # Enable key repeat of the symbol menu. Requires logout and login to take effect.
@@ -118,6 +132,7 @@ main() {
     install_dependencies
     create_directories
     create_symlinks
+    install_vscode_extensions
     configure
     
     print_status "Bootstrap complete! Please restart your terminal."
