@@ -49,5 +49,9 @@
   "makefile.configureOnOpen": true,
   "[swift]": {
     "editor.defaultFormatter": "swiftlang.swift-vscode"
+  },
+  "redhat.telemetry.enabled": true,
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
   }
 }
