@@ -16,7 +16,8 @@
       "Read(~/.aws/**)",
       "Read(~/.gnupg/**)",
       "Read(~/.config/**)"
-    ]
+    ],
+    "defaultMode": "auto"
   },
   "enabledPlugins": {
     "slack@claude-plugins-official": true,
@@ -24,5 +25,6 @@
   },
   "effortLevel": "high",
   "theme": "auto",
-  "agentPushNotifEnabled": true
+  "agentPushNotifEnabled": true,
+  "skipAutoPermissionPrompt": true
 }
