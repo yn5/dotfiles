@@ -19,8 +19,10 @@
     ]
   },
   "enabledPlugins": {
-    "everything-claude-code@everything-claude-code": true,
     "slack@claude-plugins-official": true,
     "swift-lsp@claude-plugins-official": true
-  }
+  },
+  "effortLevel": "high",
+  "theme": "auto",
+  "agentPushNotifEnabled": true
 }
